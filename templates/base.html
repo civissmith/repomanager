@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Repository Manager</title>
+        <link rel="stylesheet" type="text/css" href="/static/style.css" />
+    </head>
+    <body>
+        <div id="content">
+            {% block body %}{% endblock %}
+        </div>
+        <div id="nav">
+            Navigation:<br />
+            <ul>
+                {% block nav %}{% endblock %}
+                <!-- Change the url when the page is ready! -->
+                <li><a href="{{url_for('landing')}}">BAR</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
